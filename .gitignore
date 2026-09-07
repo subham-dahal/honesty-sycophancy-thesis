@@ -1,7 +1,9 @@
 venv/
 env/
+.env
+.env.*
 __pycache__/
 *.py[cod]
 .DS_Store
-results_*.jsonl
-swaying_results.json
+outputs/results_*.jsonl
+outputs/swaying_results.json

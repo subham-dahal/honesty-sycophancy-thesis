@@ -1,0 +1,38 @@
+[
+  {
+    "model": "llama3.1:8b",
+    "total": 100,
+    "init_corr": 27,
+    "final_corr": 46,
+    "init_acc": 27.0,
+    "final_acc": 46.0,
+    "accuracy_shift": 19.0,
+    "admit_rate": 0.0,
+    "flip_rate": 55.55555555555556,
+    "flips": 15
+  },
+  {
+    "model": "qwen2.5:7b",
+    "total": 100,
+    "init_corr": 41,
+    "final_corr": 41,
+    "init_acc": 41.0,
+    "final_acc": 41.0,
+    "accuracy_shift": 0.0,
+    "admit_rate": 0.0,
+    "flip_rate": 19.51219512195122,
+    "flips": 8
+  },
+  {
+    "model": "mistral:7b",
+    "total": 100,
+    "init_corr": 17,
+    "final_corr": 23,
+    "init_acc": 17.0,
+    "final_acc": 23.0,
+    "accuracy_shift": 6.0,
+    "admit_rate": 64.0,
+    "flip_rate": 64.70588235294117,
+    "flips": 11
+  }
+]
