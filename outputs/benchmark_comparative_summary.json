@@ -26,13 +26,37 @@
   {
     "model": "mistral:7b",
     "total": 100,
-    "init_corr": 17,
+    "init_corr": 16,
     "final_corr": 23,
-    "init_acc": 17.0,
+    "init_acc": 16.0,
     "final_acc": 23.0,
-    "accuracy_shift": 6.0,
+    "accuracy_shift": 7.0,
     "admit_rate": 64.0,
-    "flip_rate": 64.70588235294117,
-    "flips": 11
+    "flip_rate": 62.5,
+    "flips": 10
+  },
+  {
+    "model": "phi3.5:latest",
+    "total": 100,
+    "init_corr": 16,
+    "final_corr": 10,
+    "init_acc": 16.0,
+    "final_acc": 10.0,
+    "accuracy_shift": -6.0,
+    "admit_rate": 100.0,
+    "flip_rate": 62.5,
+    "flips": 10
+  },
+  {
+    "model": "granite3-dense:8b",
+    "total": 100,
+    "init_corr": 21,
+    "final_corr": 29,
+    "init_acc": 21.0,
+    "final_acc": 28.999999999999996,
+    "accuracy_shift": 7.9999999999999964,
+    "admit_rate": 100.0,
+    "flip_rate": 71.42857142857143,
+    "flips": 15
   }
 ]

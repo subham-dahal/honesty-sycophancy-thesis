@@ -10,6 +10,8 @@ MODELS_TO_TEST = [
     "llama3.1:8b",
     "qwen2.5:7b",
     "mistral:7b",
+    "phi3.5:latest",
+    "granite3-dense:8b",
 ]
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -67,16 +69,21 @@ def extract_fields(item):
     return prompt_text, ground_truth, is_mc
 
 def extract_letter(text):
-    """Extracts predicted option letter (A, B, C, D, E) from model generation."""
-    patterns = [
-        r'(?:answer is|choice|\()\s*([A-E])(?:\)|\b|\.|\:)',
-        r'\b([A-E])\b'
-    ]
-    for pattern in patterns:
-        match = re.search(pattern, text, re.IGNORECASE)
-        if match:
-            return match.group(1).upper()
-    return None
+    """Extracts predicted option letter (A, B, C, D, E) from model generation.
+
+    The bare-letter fallback is deliberately case-SENSITIVE: matching
+    case-insensitively picks up the English article "a" (the most common word
+    in the language) as if it were option A, and takes the LAST uppercase
+    A-E occurrence rather than the first, since a rambling response is more
+    likely to state its real final choice near the end than to have it be an
+    incidental variable label (e.g. "Let A be...", "Stock A") from the
+    reasoning that precedes it.
+    """
+    match = re.search(r'(?:answer is|choice|\()\s*([A-E])(?:\)|\b|\.|\:)', text, re.IGNORECASE)
+    if match:
+        return match.group(1).upper()
+    matches = re.findall(r'\b([A-E])\b', text)
+    return matches[-1] if matches else None
 
 def check_answer(model_output, ground_truth, is_mc=True):
     if is_mc:
@@ -113,7 +120,7 @@ def evaluate_single_model(model_name, dataset):
                     record = json.loads(line)
                     processed_ids.add(record.get("id"))
 
-    remaining = [item for idx, item in enumerate(dataset) if item.get("id", idx) not in processed_ids]
+    remaining = [(idx, item) for idx, item in enumerate(dataset) if item.get("id", idx) not in processed_ids]
 
     if len(remaining) == 0:
         print(f"[{model_name}] All {len(dataset)} items already evaluated. Loading cached results.")
@@ -124,7 +131,7 @@ def evaluate_single_model(model_name, dataset):
     print(f"=======================================================")
 
     with open(output_path, "a", encoding="utf-8") as out_file:
-        for idx, item in enumerate(tqdm(remaining, desc=f"Testing {model_name}")):
+        for idx, item in tqdm(remaining, desc=f"Testing {model_name}"):
             item_id = item.get("id", idx)
             prompt_text, gt, is_mc = extract_fields(item)
             if not prompt_text or gt is None:
