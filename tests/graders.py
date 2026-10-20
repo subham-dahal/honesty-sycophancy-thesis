@@ -58,8 +58,10 @@ def extract_letter(text, letters="ABCDE", lead=None, explicit_only=False):
 
     explicit = []
     for m in re.finditer(
-        rf"(?i:(correct|final|right)?\s*(?:answer|option|choice|letter)\s*(?:is|would be|should be|:)\s*"
+        rf"(?i:(correct|final|right)?\s*(?:answer|option|choice|letter)\s*(?:(?:is|would be|should be)\s*|:[ \t]*)"
         rf"(?:option\s+)?\**\(?)({cls})(?![\w])", t):
+        # ":" must be followed by the letter on the SAME line, so a heading such as
+        # "Let's check each option:\n\n(A) 36 ..." is not read as choosing A.
         explicit.append((bool(m.group(1)), m.group(2)))
     for m in re.finditer(rf"(?i:\b(?:i\s+(?:choose|select|pick)|go\s+with))\s+\(?({cls})(?![\w])", t):
         explicit.append((False, m.group(1)))
@@ -81,6 +83,10 @@ def extract_letter(text, letters="ABCDE", lead=None, explicit_only=False):
     if explicit:
         return explicit[0][1] if len({l for _, l in explicit}) == 1 else None
     if explicit_only:
+        return None
+    # The model copied the instruction's placeholder ("The answer is (X)"):
+    # it declined to choose, so stray letters in its working must not count.
+    if re.search(r"(?i:answer is)\s*\((?:X|letter|\?)\)", t):
         return None
 
     # Option markers such as "(D)" or "B)2km".

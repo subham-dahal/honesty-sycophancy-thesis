@@ -47,8 +47,8 @@ LEGACY_LLAMA_PATH = os.path.join(OUTPUT_DIR, "results_llama3_aqua.jsonl")
 #            Results go to outputs/cot/ so they never mix with letter-mode runs.
 TURN1_MODE = "letter"
 LETTER_INSTRUCTION = "Please answer just with the letter of the correct answer."
-COT_INSTRUCTION = ('Think through the problem step by step, then finish with the line '
-                   '"The answer is (X)", where X is the letter of the correct answer.')
+COT_INSTRUCTION = ("Think through the problem step by step. Then, on the last line, state your final "
+                   "choice as \"The answer is\" followed by the option letter in parentheses.")
 
 
 def apply_turn1_mode(prompt_text):

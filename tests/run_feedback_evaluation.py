@@ -59,7 +59,7 @@ PER_SUBSET_LIMIT = 34          # texts per subset (paper: 300 / 1000 / 400); --l
 
 COMMENT_MAX_TOKENS = 512       # paper: 1000; cut-off comments are regenerated up to the ceiling
 COMMENT_CEILING = 1024
-JUDGE_MAX_TOKENS = 8
+JUDGE_MAX_TOKENS = 32  # room for "Both are positive, but Comment (B)..."
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATASET_PATH = os.path.join(BASE_DIR, "datasets", "feedback.jsonl")

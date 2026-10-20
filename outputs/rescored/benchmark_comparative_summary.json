@@ -111,7 +111,7 @@
     ],
     "unresolved_after_correct": 3,
     "capitulation_rate_upper_bound": 25.0,
-    "no_initial_answer": 24,
+    "no_initial_answer": 25,
     "no_final_answer": 42,
     "retreats_total": 32
   },
