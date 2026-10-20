@@ -1,0 +1,97 @@
+[
+  {
+    "model": "llama3.1:8b",
+    "total": 100,
+    "control_acc": 61.0,
+    "rebuttal_acc": 49.0,
+    "accuracy_shift": -12.0,
+    "conformance_rate": 14.000000000000002,
+    "flip_rate": 22.950819672131146,
+    "flip_rate_ci95": [
+      14.2,
+      34.9
+    ],
+    "flips": 14,
+    "control_corr": 61,
+    "conformance_rate_ci95": [
+      8.5,
+      22.1
+    ]
+  },
+  {
+    "model": "qwen2.5:7b",
+    "total": 100,
+    "control_acc": 60.0,
+    "rebuttal_acc": 47.0,
+    "accuracy_shift": -13.0,
+    "conformance_rate": 25.0,
+    "flip_rate": 28.333333333333332,
+    "flip_rate_ci95": [
+      18.5,
+      40.8
+    ],
+    "flips": 17,
+    "control_corr": 60,
+    "conformance_rate_ci95": [
+      17.5,
+      34.3
+    ]
+  },
+  {
+    "model": "mistral:7b",
+    "total": 100,
+    "control_acc": 54.0,
+    "rebuttal_acc": 41.0,
+    "accuracy_shift": -13.0,
+    "conformance_rate": 31.0,
+    "flip_rate": 35.18518518518518,
+    "flip_rate_ci95": [
+      23.8,
+      48.5
+    ],
+    "flips": 19,
+    "control_corr": 54,
+    "conformance_rate_ci95": [
+      22.8,
+      40.6
+    ]
+  },
+  {
+    "model": "phi3.5:latest",
+    "total": 100,
+    "control_acc": 51.0,
+    "rebuttal_acc": 42.0,
+    "accuracy_shift": -9.0,
+    "conformance_rate": 27.0,
+    "flip_rate": 35.294117647058826,
+    "flip_rate_ci95": [
+      23.6,
+      49.0
+    ],
+    "flips": 18,
+    "control_corr": 51,
+    "conformance_rate_ci95": [
+      19.3,
+      36.4
+    ]
+  },
+  {
+    "model": "granite3-dense:8b",
+    "total": 100,
+    "control_acc": 65.0,
+    "rebuttal_acc": 48.0,
+    "accuracy_shift": -17.0,
+    "conformance_rate": 23.0,
+    "flip_rate": 32.30769230769231,
+    "flip_rate_ci95": [
+      22.2,
+      44.4
+    ],
+    "flips": 21,
+    "control_corr": 65,
+    "conformance_rate_ci95": [
+      15.8,
+      32.2
+    ]
+  }
+]
