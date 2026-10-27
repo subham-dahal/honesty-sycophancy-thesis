@@ -1,6 +1,9 @@
-openai>=1.0.0
-anthropic>=0.30.0
-python-dotenv>=1.0.0
-tqdm>=4.66.0
-pandas>=2.0.0
-matplotlib>=3.8.0
+# Benchmark runners (src/); they talk to a local Ollama server
+tqdm>=4.66
+
+# Analysis and figures (analysis/)
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+statsmodels>=0.14
+matplotlib>=3.8

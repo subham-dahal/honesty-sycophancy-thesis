@@ -1,0 +1,1048 @@
+{
+ "letter": {
+  "llama3.1:8b": {
+   "n": 100,
+   "init_corr": 27,
+   "init_acc": 27.0,
+   "final_acc": 66.0,
+   "flips": 9,
+   "retreats": 0,
+   "capit": 9,
+   "unresolved": 0,
+   "flip_rate": 33.333333333333336,
+   "flip_ci": [
+    18.6,
+    52.2
+   ],
+   "cap_rate": 33.333333333333336,
+   "cap_ci": [
+    18.6,
+    52.2
+   ],
+   "corrections": 48,
+   "init_incorrect": 73,
+   "apology": 10,
+   "admission": 10,
+   "t1_median": 2.0
+  },
+  "qwen2.5:7b": {
+   "n": 100,
+   "init_corr": 41,
+   "init_acc": 41.0,
+   "final_acc": 74.0,
+   "flips": 8,
+   "retreats": 0,
+   "capit": 8,
+   "unresolved": 0,
+   "flip_rate": 19.51219512195122,
+   "flip_ci": [
+    10.2,
+    34.0
+   ],
+   "cap_rate": 19.51219512195122,
+   "cap_ci": [
+    10.2,
+    34.0
+   ],
+   "corrections": 41,
+   "init_incorrect": 59,
+   "apology": 0,
+   "admission": 0,
+   "t1_median": 3.0
+  },
+  "mistral:7b": {
+   "n": 100,
+   "init_corr": 17,
+   "init_acc": 17.0,
+   "final_acc": 34.0,
+   "flips": 10,
+   "retreats": 1,
+   "capit": 11,
+   "unresolved": 0,
+   "flip_rate": 58.8235294117647,
+   "flip_ci": [
+    36.0,
+    78.4
+   ],
+   "cap_rate": 64.70588235294117,
+   "cap_ci": [
+    41.3,
+    82.7
+   ],
+   "corrections": 28,
+   "init_incorrect": 83,
+   "apology": 100,
+   "admission": 99,
+   "t1_median": 8.0
+  },
+  "phi3.5:latest": {
+   "n": 100,
+   "init_corr": 32,
+   "init_acc": 32.0,
+   "final_acc": 32.0,
+   "flips": 3,
+   "retreats": 1,
+   "capit": 4,
+   "unresolved": 4,
+   "flip_rate": 9.375,
+   "flip_ci": [
+    3.2,
+    24.2
+   ],
+   "cap_rate": 12.5,
+   "cap_ci": [
+    5.0,
+    28.1
+   ],
+   "corrections": 8,
+   "init_incorrect": 68,
+   "apology": 98,
+   "admission": 26,
+   "t1_median": 329.5
+  },
+  "granite3-dense:8b": {
+   "n": 100,
+   "init_corr": 44,
+   "init_acc": 44.0,
+   "final_acc": 34.0,
+   "flips": 20,
+   "retreats": 0,
+   "capit": 20,
+   "unresolved": 0,
+   "flip_rate": 45.45454545454545,
+   "flip_ci": [
+    31.7,
+    59.9
+   ],
+   "cap_rate": 45.45454545454545,
+   "cap_ci": [
+    31.7,
+    59.9
+   ],
+   "corrections": 10,
+   "init_incorrect": 56,
+   "apology": 100,
+   "admission": 49,
+   "t1_median": 192.5
+  }
+ },
+ "cot": {
+  "llama3.1:8b": {
+   "n": 100,
+   "init_corr": 68,
+   "init_acc": 68.0,
+   "final_acc": 37.0,
+   "flips": 27,
+   "retreats": 0,
+   "capit": 27,
+   "unresolved": 10,
+   "flip_rate": 39.705882352941174,
+   "flip_ci": [
+    28.9,
+    51.6
+   ],
+   "cap_rate": 39.705882352941174,
+   "cap_ci": [
+    28.9,
+    51.6
+   ],
+   "corrections": 6,
+   "init_incorrect": 32,
+   "apology": 29,
+   "admission": 29,
+   "t1_median": 284.0
+  },
+  "qwen2.5:7b": {
+   "n": 100,
+   "init_corr": 86,
+   "init_acc": 86.0,
+   "final_acc": 83.0,
+   "flips": 5,
+   "retreats": 0,
+   "capit": 5,
+   "unresolved": 0,
+   "flip_rate": 5.813953488372093,
+   "flip_ci": [
+    2.5,
+    12.9
+   ],
+   "cap_rate": 5.813953488372093,
+   "cap_ci": [
+    2.5,
+    12.9
+   ],
+   "corrections": 2,
+   "init_incorrect": 14,
+   "apology": 4,
+   "admission": 1,
+   "t1_median": 378.0
+  },
+  "mistral:7b": {
+   "n": 100,
+   "init_corr": 26,
+   "init_acc": 26.0,
+   "final_acc": 23.0,
+   "flips": 10,
+   "retreats": 1,
+   "capit": 11,
+   "unresolved": 0,
+   "flip_rate": 38.46153846153846,
+   "flip_ci": [
+    22.4,
+    57.5
+   ],
+   "cap_rate": 42.30769230769231,
+   "cap_ci": [
+    25.5,
+    61.1
+   ],
+   "corrections": 8,
+   "init_incorrect": 74,
+   "apology": 100,
+   "admission": 98,
+   "t1_median": 348.5
+  },
+  "phi3.5:latest": {
+   "n": 100,
+   "init_corr": 38,
+   "init_acc": 38.0,
+   "final_acc": 35.0,
+   "flips": 4,
+   "retreats": 0,
+   "capit": 4,
+   "unresolved": 2,
+   "flip_rate": 10.526315789473685,
+   "flip_ci": [
+    4.2,
+    24.1
+   ],
+   "cap_rate": 10.526315789473685,
+   "cap_ci": [
+    4.2,
+    24.1
+   ],
+   "corrections": 3,
+   "init_incorrect": 62,
+   "apology": 99,
+   "admission": 29,
+   "t1_median": 547.5
+  },
+  "granite3-dense:8b": {
+   "n": 100,
+   "init_corr": 51,
+   "init_acc": 51.0,
+   "final_acc": 47.0,
+   "flips": 12,
+   "retreats": 1,
+   "capit": 13,
+   "unresolved": 0,
+   "flip_rate": 23.529411764705884,
+   "flip_ci": [
+    14.0,
+    36.8
+   ],
+   "cap_rate": 25.49019607843137,
+   "cap_ci": [
+    15.5,
+    38.9
+   ],
+   "corrections": 9,
+   "init_incorrect": 49,
+   "apology": 96,
+   "admission": 47,
+   "t1_median": 236.0
+  }
+ },
+ "paired_letter_vs_cot": {
+  "llama3.1:8b": {
+   "n": 18,
+   "cap_letter": 4,
+   "cap_cot": 6,
+   "letter_only": 2,
+   "cot_only": 4,
+   "mcnemar_p": 0.6875
+  },
+  "qwen2.5:7b": {
+   "n": 41,
+   "cap_letter": 8,
+   "cap_cot": 3,
+   "letter_only": 8,
+   "cot_only": 3,
+   "mcnemar_p": 0.2265625
+  },
+  "mistral:7b": {
+   "n": 6,
+   "cap_letter": 1,
+   "cap_cot": 3,
+   "letter_only": 0,
+   "cot_only": 2,
+   "mcnemar_p": 0.5
+  },
+  "phi3.5:latest": {
+   "n": 20,
+   "cap_letter": 1,
+   "cap_cot": 0,
+   "letter_only": 1,
+   "cot_only": 0,
+   "mcnemar_p": 1.0
+  },
+  "granite3-dense:8b": {
+   "n": 33,
+   "cap_letter": 15,
+   "cap_cot": 7,
+   "letter_only": 12,
+   "cot_only": 4,
+   "mcnemar_p": 0.076812744140625
+  }
+ },
+ "logit": {
+  "cap ~ C(cond) + C(model)": {
+   "Intercept": {
+    "OR": 0.4126961226147779,
+    "lo": 0.25320005061712764,
+    "hi": 0.6726621468129781,
+    "p": 0.0003841348484939065
+   },
+   "C(cond)[T.letter]": {
+    "OR": 1.693544479765964,
+    "lo": 1.0510601202120047,
+    "hi": 2.7287619897206823,
+    "p": 0.030420185983334905
+   },
+   "C(model)[T.llama3.1:8b]": {
+    "OR": 1.5003493480165588,
+    "lo": 0.81270733837226,
+    "hi": 2.769814002913091,
+    "p": 0.19463914132367677
+   },
+   "C(model)[T.mistral:7b]": {
+    "OR": 2.064047092834488,
+    "lo": 0.9847845962102079,
+    "hi": 4.326113972368754,
+    "p": 0.05493944849000089
+   },
+   "C(model)[T.phi3.5:latest]": {
+    "OR": 0.26790549581662937,
+    "lo": 0.11370949577838867,
+    "hi": 0.6311993048376098,
+    "p": 0.0025926962197373297
+   },
+   "C(model)[T.qwen2.5:7b]": {
+    "OR": 0.22737887609514879,
+    "lo": 0.11101059130208582,
+    "hi": 0.4657317170179022,
+    "p": 5.147513204554597e-05
+   },
+   "n": 414
+  },
+  "cap ~ C(cond) + C(model) + adm + difficulty": {
+   "Intercept": {
+    "OR": 0.8645795611895225,
+    "lo": 0.3523422330229997,
+    "hi": 2.1215107005860214,
+    "p": 0.7506974450476002
+   },
+   "C(cond)[T.letter]": {
+    "OR": 1.5657479282460844,
+    "lo": 0.961732008363008,
+    "hi": 2.549116129533619,
+    "p": 0.07138019752743618
+   },
+   "C(model)[T.llama3.1:8b]": {
+    "OR": 1.4695112929352865,
+    "lo": 0.7633133892516383,
+    "hi": 2.8290653229357097,
+    "p": 0.24940280965455275
+   },
+   "C(model)[T.mistral:7b]": {
+    "OR": 2.096656755237652,
+    "lo": 0.9534330272243191,
+    "hi": 4.610674713127402,
+    "p": 0.06556873007164277
+   },
+   "C(model)[T.phi3.5:latest]": {
+    "OR": 0.29696400546700996,
+    "lo": 0.12233947037772751,
+    "hi": 0.7208435697059,
+    "p": 0.007287531591165394
+   },
+   "C(model)[T.qwen2.5:7b]": {
+    "OR": 0.21500078859431593,
+    "lo": 0.09533202305602523,
+    "hi": 0.484887843710311,
+    "p": 0.00021190405868107905
+   },
+   "adm": {
+    "OR": 1.1272720732096628,
+    "lo": 0.607681667733016,
+    "hi": 2.0911315817358345,
+    "p": 0.703944089303187
+   },
+   "difficulty": {
+    "OR": 0.7995160404948678,
+    "lo": 0.6587172448729003,
+    "hi": 0.9704101478805673,
+    "p": 0.02358208656300507
+   },
+   "n": 414
+  }
+ },
+ "adm_x_cap_cot": {
+  "0": {
+   "0": 142,
+   "1": 55
+  },
+  "1": {
+   "0": 30,
+   "1": 30
+  }
+ },
+ "rerun": {
+  "llama3.1:8b": {
+   "unresolved": 10,
+   "held": 8,
+   "flipped": 4
+  },
+  "phi3.5:latest": {
+   "flipped": 2,
+   "unresolved": 2
+  },
+  "granite3-dense:8b": {
+   "flipped": 1,
+   "held": 2
+  }
+ },
+ "answer": {
+  "llama3.1:8b": {
+   "n": 100,
+   "control": 62,
+   "rebuttal": 49,
+   "c2i": 15,
+   "i2c": 2,
+   "mcnemar_p": 0.002349853515625,
+   "conform": 14,
+   "conform_ci": [
+    8.5,
+    22.1
+   ],
+   "subsets": {
+    "trivia_qa": {
+     "n": 50,
+     "conf": 7
+    },
+    "truthful_qa": {
+     "n": 50,
+     "conf": 7
+    }
+   },
+   "truncated": 0
+  },
+  "qwen2.5:7b": {
+   "n": 100,
+   "control": 60,
+   "rebuttal": 47,
+   "c2i": 17,
+   "i2c": 4,
+   "mcnemar_p": 0.007197380065917969,
+   "conform": 25,
+   "conform_ci": [
+    17.5,
+    34.3
+   ],
+   "subsets": {
+    "trivia_qa": {
+     "n": 50,
+     "conf": 21
+    },
+    "truthful_qa": {
+     "n": 50,
+     "conf": 4
+    }
+   },
+   "truncated": 0
+  },
+  "mistral:7b": {
+   "n": 100,
+   "control": 55,
+   "rebuttal": 42,
+   "c2i": 19,
+   "i2c": 6,
+   "mcnemar_p": 0.01463329792022705,
+   "conform": 30,
+   "conform_ci": [
+    21.9,
+    39.6
+   ],
+   "subsets": {
+    "trivia_qa": {
+     "n": 50,
+     "conf": 25
+    },
+    "truthful_qa": {
+     "n": 50,
+     "conf": 5
+    }
+   },
+   "truncated": 0
+  },
+  "phi3.5:latest": {
+   "n": 100,
+   "control": 54,
+   "rebuttal": 38,
+   "c2i": 19,
+   "i2c": 3,
+   "mcnemar_p": 0.0008554458618164062,
+   "conform": 17,
+   "conform_ci": [
+    10.9,
+    25.5
+   ],
+   "subsets": {
+    "trivia_qa": {
+     "n": 50,
+     "conf": 12
+    },
+    "truthful_qa": {
+     "n": 50,
+     "conf": 5
+    }
+   },
+   "truncated": 2
+  },
+  "granite3-dense:8b": {
+   "n": 100,
+   "control": 65,
+   "rebuttal": 48,
+   "c2i": 21,
+   "i2c": 4,
+   "mcnemar_p": 0.0009105205535888672,
+   "conform": 23,
+   "conform_ci": [
+    15.8,
+    32.2
+   ],
+   "subsets": {
+    "trivia_qa": {
+     "n": 50,
+     "conf": 16
+    },
+    "truthful_qa": {
+     "n": 50,
+     "conf": 7
+    }
+   },
+   "truncated": 0
+  }
+ },
+ "answer_old_phi": {
+  "control": 44,
+  "rebuttal": 41
+ },
+ "feedback": [
+  {
+   "model": "llama3.1:8b",
+   "judge": "gemma2:9b",
+   "texts": 102,
+   "judgements": 816,
+   "unparsed_judgements": 2,
+   "judge_picked_A_pct": 41.911764705882355,
+   "order_consistency_pct": 81.2807881773399,
+   "positivity": {
+    "all": {
+     "I really like": {
+      "positivity": 91.66666666666666,
+      "sem": 1.9398452135813908,
+      "n": 204
+     },
+     "I really dislike": {
+      "positivity": 13.793103448275861,
+      "sem": 2.426198430104459,
+      "n": 203
+     },
+     "I wrote": {
+      "positivity": 80.3921568627451,
+      "sem": 2.7865942286639322,
+      "n": 204
+     },
+     "I did not write": {
+      "positivity": 56.15763546798029,
+      "sem": 3.4912078574865184,
+      "n": 203
+     }
+    },
+    "arguments": {
+     "I really like": {
+      "positivity": 91.17647058823529,
+      "sem": 3.4651748677552043,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 31.343283582089555,
+      "sem": 5.710074738806193,
+      "n": 67
+     },
+     "I wrote": {
+      "positivity": 77.94117647058823,
+      "sem": 5.065674149473934,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 55.88235294117647,
+      "sem": 6.066051758635041,
+      "n": 68
+     }
+    },
+    "math": {
+     "I really like": {
+      "positivity": 95.58823529411765,
+      "sem": 2.5088285985372334,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 10.294117647058822,
+      "sem": 3.7125099257606764,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 80.88235294117648,
+      "sem": 4.804041017907784,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 60.29411764705882,
+      "sem": 5.977608893829516,
+      "n": 68
+     }
+    },
+    "poems": {
+     "I really like": {
+      "positivity": 88.23529411764706,
+      "sem": 3.936174147754153,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 0.0,
+      "sem": 0.0,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 82.35294117647058,
+      "sem": 4.6573440596575395,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 52.23880597014925,
+      "sem": 6.148401797545518,
+      "n": 67
+     }
+    }
+   },
+   "like_minus_dislike": 77.8735632183908,
+   "wrote_minus_not_wrote": 24.234521394764805
+  },
+  {
+   "model": "qwen2.5:7b",
+   "judge": "gemma2:9b",
+   "texts": 102,
+   "judgements": 816,
+   "unparsed_judgements": 12,
+   "judge_picked_A_pct": 37.990196078431374,
+   "order_consistency_pct": 76.32241813602015,
+   "positivity": {
+    "all": {
+     "I really like": {
+      "positivity": 85.71428571428571,
+      "sem": 2.4620785269489667,
+      "n": 203
+     },
+     "I really dislike": {
+      "positivity": 26.47058823529412,
+      "sem": 3.096451792692335,
+      "n": 204
+     },
+     "I wrote": {
+      "positivity": 77.61194029850746,
+      "sem": 2.9475250236017168,
+      "n": 201
+     },
+     "I did not write": {
+      "positivity": 54.08163265306123,
+      "sem": 3.5686241512305523,
+      "n": 196
+     }
+    },
+    "arguments": {
+     "I really like": {
+      "positivity": 83.5820895522388,
+      "sem": 4.55977681090133,
+      "n": 67
+     },
+     "I really dislike": {
+      "positivity": 32.35294117647059,
+      "sem": 5.715364621735562,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 80.88235294117648,
+      "sem": 4.8040410179077835,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 50.74626865671642,
+      "sem": 6.153888993459197,
+      "n": 67
+     }
+    },
+    "math": {
+     "I really like": {
+      "positivity": 85.29411764705883,
+      "sem": 4.326808584867504,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 41.17647058823529,
+      "sem": 6.012605326870566,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 70.76923076923077,
+      "sem": 5.685286730420951,
+      "n": 65
+     },
+     "I did not write": {
+      "positivity": 52.38095238095239,
+      "sem": 6.342802710311083,
+      "n": 63
+     }
+    },
+    "poems": {
+     "I really like": {
+      "positivity": 88.23529411764706,
+      "sem": 3.936174147754154,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 5.88235294117647,
+      "sem": 2.8745751613248274,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 80.88235294117648,
+      "sem": 4.804041017907787,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 59.09090909090909,
+      "sem": 6.098367211363066,
+      "n": 66
+     }
+    }
+   },
+   "like_minus_dislike": 59.24369747899159,
+   "wrote_minus_not_wrote": 23.530307645446236
+  },
+  {
+   "model": "mistral:7b",
+   "judge": "gemma2:9b",
+   "texts": 102,
+   "judgements": 816,
+   "unparsed_judgements": 6,
+   "judge_picked_A_pct": 47.794117647058826,
+   "order_consistency_pct": 82.87841191066998,
+   "positivity": {
+    "all": {
+     "I really like": {
+      "positivity": 73.6318407960199,
+      "sem": 3.1157150869355577,
+      "n": 201
+     },
+     "I really dislike": {
+      "positivity": 17.15686274509804,
+      "sem": 2.6460569561240597,
+      "n": 204
+     },
+     "I wrote": {
+      "positivity": 73.76237623762376,
+      "sem": 3.1029992516802807,
+      "n": 202
+     },
+     "I did not write": {
+      "positivity": 50.73891625615764,
+      "sem": 3.5176035403610104,
+      "n": 203
+     }
+    },
+    "arguments": {
+     "I really like": {
+      "positivity": 85.29411764705883,
+      "sem": 4.3268085848675035,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 35.294117647058826,
+      "sem": 5.838289751903878,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 70.58823529411765,
+      "sem": 5.566590863616282,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 51.470588235294116,
+      "sem": 6.105829573426905,
+      "n": 68
+     }
+    },
+    "math": {
+     "I really like": {
+      "positivity": 67.64705882352942,
+      "sem": 5.715364621735562,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 14.705882352941178,
+      "sem": 4.326808584867506,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 68.18181818181817,
+      "sem": 5.7771719027476545,
+      "n": 66
+     },
+     "I did not write": {
+      "positivity": 51.470588235294116,
+      "sem": 6.105829573426905,
+      "n": 68
+     }
+    },
+    "poems": {
+     "I really like": {
+      "positivity": 67.6923076923077,
+      "sem": 5.845647751373333,
+      "n": 65
+     },
+     "I really dislike": {
+      "positivity": 1.4705882352941175,
+      "sem": 1.4705882352941195,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 82.35294117647058,
+      "sem": 4.657344059657539,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 49.25373134328358,
+      "sem": 6.153888993459197,
+      "n": 67
+     }
+    }
+   },
+   "like_minus_dislike": 56.47497805092186,
+   "wrote_minus_not_wrote": 23.023459981466118
+  },
+  {
+   "model": "phi3.5:latest",
+   "judge": "gemma2:9b",
+   "texts": 102,
+   "judgements": 816,
+   "unparsed_judgements": 9,
+   "judge_picked_A_pct": 42.52450980392157,
+   "order_consistency_pct": 78.0,
+   "positivity": {
+    "all": {
+     "I really like": {
+      "positivity": 87.12871287128714,
+      "sem": 2.3620746009610025,
+      "n": 202
+     },
+     "I really dislike": {
+      "positivity": 19.402985074626866,
+      "sem": 2.7962677604768893,
+      "n": 201
+     },
+     "I wrote": {
+      "positivity": 78.21782178217822,
+      "sem": 2.911424173109669,
+      "n": 202
+     },
+     "I did not write": {
+      "positivity": 59.900990099009896,
+      "sem": 3.456891879703035,
+      "n": 202
+     }
+    },
+    "arguments": {
+     "I really like": {
+      "positivity": 94.11764705882352,
+      "sem": 2.874575161324828,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 32.35294117647059,
+      "sem": 5.715364621735562,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 79.41176470588235,
+      "sem": 4.939859350354095,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 63.23529411764706,
+      "sem": 5.890578094960337,
+      "n": 68
+     }
+    },
+    "math": {
+     "I really like": {
+      "positivity": 80.3030303030303,
+      "sem": 4.932975938212036,
+      "n": 66
+     },
+     "I really dislike": {
+      "positivity": 20.0,
+      "sem": 4.999999999999997,
+      "n": 65
+     },
+     "I wrote": {
+      "positivity": 59.09090909090909,
+      "sem": 6.098367211363065,
+      "n": 66
+     },
+     "I did not write": {
+      "positivity": 50.0,
+      "sem": 6.201736729460423,
+      "n": 66
+     }
+    },
+    "poems": {
+     "I really like": {
+      "positivity": 86.76470588235294,
+      "sem": 4.140005770751053,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 5.88235294117647,
+      "sem": 2.874575161324828,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 95.58823529411765,
+      "sem": 2.5088285985372334,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 66.17647058823529,
+      "sem": 5.779947062852093,
+      "n": 68
+     }
+    }
+   },
+   "like_minus_dislike": 67.72572779666027,
+   "wrote_minus_not_wrote": 18.316831683168324
+  },
+  {
+   "model": "granite3-dense:8b",
+   "judge": "gemma2:9b",
+   "texts": 102,
+   "judgements": 816,
+   "unparsed_judgements": 21,
+   "judge_picked_A_pct": 45.220588235294116,
+   "order_consistency_pct": 83.84615384615384,
+   "positivity": {
+    "all": {
+     "I really like": {
+      "positivity": 69.54314720812182,
+      "sem": 3.2873174638558766,
+      "n": 197
+     },
+     "I really dislike": {
+      "positivity": 26.5,
+      "sem": 3.128528159088722,
+      "n": 200
+     },
+     "I wrote": {
+      "positivity": 79.3103448275862,
+      "sem": 2.8501378167893945,
+      "n": 203
+     },
+     "I did not write": {
+      "positivity": 50.256410256410255,
+      "sem": 3.589743589743587,
+      "n": 195
+     }
+    },
+    "arguments": {
+     "I really like": {
+      "positivity": 67.6923076923077,
+      "sem": 5.845647751373333,
+      "n": 65
+     },
+     "I really dislike": {
+      "positivity": 30.303030303030305,
+      "sem": 5.700242079551277,
+      "n": 66
+     },
+     "I wrote": {
+      "positivity": 64.17910447761194,
+      "sem": 5.901916735666632,
+      "n": 67
+     },
+     "I did not write": {
+      "positivity": 32.35294117647059,
+      "sem": 5.715364621735562,
+      "n": 68
+     }
+    },
+    "math": {
+     "I really like": {
+      "positivity": 82.8125,
+      "sem": 4.753177456453702,
+      "n": 64
+     },
+     "I really dislike": {
+      "positivity": 46.96969696969697,
+      "sem": 6.190336468479956,
+      "n": 66
+     },
+     "I wrote": {
+      "positivity": 91.17647058823529,
+      "sem": 3.4651748677552066,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 56.451612903225815,
+      "sem": 6.348327120481287,
+      "n": 62
+     }
+    },
+    "poems": {
+     "I really like": {
+      "positivity": 58.82352941176471,
+      "sem": 6.012605326870565,
+      "n": 68
+     },
+     "I really dislike": {
+      "positivity": 2.941176470588235,
+      "sem": 2.0641471370515787,
+      "n": 68
+     },
+     "I wrote": {
+      "positivity": 82.35294117647058,
+      "sem": 4.6573440596575395,
+      "n": 68
+     },
+     "I did not write": {
+      "positivity": 63.07692307692307,
+      "sem": 6.032456592830046,
+      "n": 65
+     }
+    }
+   },
+   "like_minus_dislike": 43.04314720812182,
+   "wrote_minus_not_wrote": 29.05393457117595
+  }
+ ]
+}

@@ -1,12 +1,14 @@
+# Python environments and caches
 venv/
+.venv/
 env/
-.env
-.env.*
 __pycache__/
 *.py[cod]
+
+# Secrets and local tool settings
+.env
+.env.*
+.claude/
+
+# OS files
 .DS_Store
-outputs/results_*.jsonl
-outputs/answer_results_*.jsonl
-outputs/feedback_results_*.jsonl
-outputs/swaying_results.json
-README.md

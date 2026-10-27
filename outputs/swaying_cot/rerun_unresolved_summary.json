@@ -1,0 +1,15 @@
+{
+  "llama3.1:8b": {
+    "unresolved": 10,
+    "held": 8,
+    "flipped": 4
+  },
+  "phi3.5:latest": {
+    "flipped": 2,
+    "unresolved": 2
+  },
+  "granite3-dense:8b": {
+    "flipped": 1,
+    "held": 2
+  }
+}
